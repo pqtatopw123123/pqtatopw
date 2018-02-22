@@ -1,2 +1,1 @@
-# Pqtato's Website
-I love minecraft!
+# https://pqtato.pw
