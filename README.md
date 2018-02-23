@@ -1,1 +1,1 @@
-# The code for pqtato.pw
+# The code for http://www.pqtato.pw
