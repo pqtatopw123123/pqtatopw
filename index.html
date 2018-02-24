@@ -11,19 +11,37 @@
 		
 		<!-- Matomo -->
 		<script type="text/javascript">
-		  var _paq = _paq || [];
-		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		  _paq.push(['trackPageView']);
-		  _paq.push(['enableLinkTracking']);
-		  (function() {
-		    var u="//pqtatoservers.000webhostapp.com/analytics/";
-		    _paq.push(['setTrackerUrl', u+'piwik.php']);
-		    _paq.push(['setSiteId', '1']);
-		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-		  })();
+				  var _paq = _paq || [];
+				  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+				  _paq.push(['trackPageView']);
+				  _paq.push(['enableLinkTracking']);
+				  (function() {
+				    var u="//pqtatoservers.000webhostapp.com/analytics/";
+				    _paq.push(['setTrackerUrl', u+'piwik.php']);
+				    _paq.push(['setSiteId', '1']);
+				    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+				  })();
 		</script>
 		<!-- End Matomo Code -->
+
+		<!-- Cookie Consent -->
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>
+			window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+			  "palette": {
+			    "popup": {
+			      "background": "#252e39"
+			    },
+			    "button": {
+			      "background": "#14a7d0"
+			    }
+			  }
+			})});
+		</script>
+		<!-- End Cookie Consent Code -->
 	</head>
 	<body>
 		<!-- Wrapper -->
