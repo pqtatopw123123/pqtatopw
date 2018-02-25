@@ -1,0 +1,4 @@
+defaults:
+  -
+    permalink: pretty
+    post_dirs: false
