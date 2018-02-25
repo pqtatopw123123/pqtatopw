@@ -1,4 +1,4 @@
 defaults:
   -
-    permalink: /:categories/:title
+    permalink: pretty
     post_dirs: false
