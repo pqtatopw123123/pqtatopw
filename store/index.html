@@ -1,11 +1,14 @@
 <head>
     <title>The Store</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 </head>
 <style>
     body {
         background-color: #cccccc;
     }
-	.lds-ellipsis {
+	/*
+    .lds-ellipsis {
       display: inline-block;
       position: relative;
       width: 64px;
@@ -60,37 +63,44 @@
         transform: translate(19px, 0);
       }
     }
-
-    /* This parent can be any width and height */
     .block {
       text-align: center;
-
-      /* May want to do this if there is risk the container may be narrower than the element inside */
       white-space: nowrap;
     }
-
-    /* The ghost, nudged to maintain perfect centering */
     .block:before {
       content: '';
       display: inline-block;
       height: 100%;
       vertical-align: middle;
-      margin-right: -0.25em; /* Adjusts for spacing */
+      margin-right: -0.25em;
     }
-
-    /* The element to be centered, can also be of any width and height */ 
     .centered {
       display: inline-block;
       vertical-align: middle;
       width: 300px;
     }
+    */
 </style>
 <html>
     <div class="block">
     	<div class="centered">
             <img src="/paypal.png" style="width:100%;">
             <br/>
-            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <!-- <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> -->
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
     	</div>
     </div>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </html>
