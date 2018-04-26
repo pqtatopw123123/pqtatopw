@@ -80,9 +80,15 @@
 <html>
     <div class="block">
     	<div class="centered">
-            <img src="/paypal.png" style="width:100%;">
+            <img src="/paypal.png" style="width:100%;" onload="loaded()">
             <br/>
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
     	</div>
     </div>
+    
+    <script>
+    	function loaded() {
+        	window.location.replace("http://www.pqtato.pw/store/home");   
+        }
+    </script>
 </html>
