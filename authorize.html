@@ -1,12 +1,36 @@
 <head>
-    <title>Authorize a bot</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-    <style type="text/css">body{position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%);background-color:#282b30;background-image:url(https://discordapp.com/assets/d20e43cdcadf850cfd8d4e953df0f3b4.png);text-align:center;font-family:'Roboto',sans-serif;font-size:10em}p{color:#fff;text-shadow:4px 4px #7289da}</style>
-</head>
-<html>
-
-    <p>PASTE A<br>CLIENT ID</p>
-
-    <script type="text/javascript">document.getElementsByTagName("body")[0].onpaste=function(e){var paste=e.clipboardData&&e.clipboardData.getData?e.clipboardData.getData('text/plain'):window.clipboardData&&window.clipboardData.getData?window.clipboardData.getData('Text'):false;if(paste){nums=paste.replace(/\D/g,"");if(nums.length!=18){alert("Client IDs are 18 digits long, not the "+nums.length+" digits you gave in \""+paste+"\"");return;}document.getElementsByTagName("p")[0].innerHTML="LOADING...";window.location="https://discordapp.com/oauth2/authorize?scope=bot&client_id="+nums;}};</script>
-
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel= "stylesheet">
+<link href= "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"> 
+<title>Discord Bot Authorize</title> 
+<style> 
+.btn-full-width { 
+width: 100%; 
+} 
+</style> 
+</head> 
+<body> 
+<main class="container"> 
+<div class="card card-panel center"> 
+<h1>Discord Bot Authorize</h1> 
+</div> 
+<div class="card card-panel"> 
+<div class="input-field"> 
+<input id="clientid" type="text"> 
+<label for= "clientid">Client ID</label> 
+</div> 
+</div>
+<a class="btn btn-large btn-full-width waves-effect waves-light" href="#!">Invite</a> 
+</main>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type= "text/javascript"> 
+</script> 
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"> 
+</script> 
+<script> 
+$(function() { 
+$('a').click(function(e) { 
+var clientid = $("#clientid").val();  
+window.location="https://discordapp.com/oauth2/authorize?scope=bot&permissions=8&client_id="+clientid;}};
+</script> 
+</body> 
 </html>
