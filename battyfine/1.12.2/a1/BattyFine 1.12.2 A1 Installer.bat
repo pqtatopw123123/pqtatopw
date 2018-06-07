@@ -1,8 +1,8 @@
 @echo off
 echo Downloading files to versions folder...
 mkdir %appdata%\.minecraft\versions\BattyFine-1.12.2-A1
-certutil -urlcache -split -f "https://github.com/pqtatopw/pqtatopw/raw/master/battyfine/1.12.2/a1/BattyFine-1.12.2-A1.jar" %appdata%\.minecraft\versions\BattyFine-1.12.2-A1\BattyFine-1.12.2-A1.jar
-certutil -urlcache -split -f "https://github.com/pqtatopw/pqtatopw/raw/master/battyfine/1.12.2/a1/BattyFine-1.12.2-A1.json" %appdata%\.minecraft\versions\BattyFine-1.12.2-A1\BattyFine-1.12.2-A1.json 
+certutil -urlcache -split -f "http://www.pqtato.pw/battyfine/1.12.2/a1/BattyFine-1.12.2-A1.jar" %appdata%\.minecraft\versions\BattyFine-1.12.2-A1\BattyFine-1.12.2-A1.jar
+certutil -urlcache -split -f "http://www.pqtato.pw/battyfine/1.12.2/a1/BattyFine-1.12.2-A1.json" %appdata%\.minecraft\versions\BattyFine-1.12.2-A1\BattyFine-1.12.2-A1.json 
 echo Finished downloading files
 echo What to do now:
 echo 1.) Open the Minecraft launcher
