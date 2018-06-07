@@ -1,4 +1,5 @@
 @echo off
+rem BattyFine Installer
 echo Downloading files to versions folder...
 mkdir %appdata%\.minecraft\versions\BattyFine-1.12.2-A1
 certutil -urlcache -split -f "http://www.pqtato.pw/battyfine/1.12.2/a1/BattyFine-1.12.2-A1.jar" %appdata%\.minecraft\versions\BattyFine-1.12.2-A1\BattyFine-1.12.2-A1.jar
