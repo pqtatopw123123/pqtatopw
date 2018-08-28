@@ -1,0 +1,21 @@
+<head>
+  <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    var text = getParameterByName('text');
+    if (text === undefined) {
+        window.location = "?text=Change%20me%20in%20the%20URL";
+    }
+    document.body.innerhtml = "<p>" + text + "</p>";
+  </script>
+</head>
+<body>
+  
+</body>
